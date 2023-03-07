@@ -1,0 +1,15 @@
+
+.content{
+    width:400px;
+    height:500px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    form{
+        text-align:center;
+        mat-form-field{
+            width:300px;
+        }
+    }
+}
+

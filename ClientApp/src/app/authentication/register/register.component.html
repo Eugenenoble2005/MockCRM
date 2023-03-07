@@ -1,0 +1,20 @@
+<p>
+    <mat-toolbar>
+        <div>
+            <span>Register</span>
+        </div>
+    </mat-toolbar>
+</p>
+<div class="content">
+    <form #form="ngForm" (ngSubmit)="Register(form.value)">
+        <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput name="username" ngModel>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput name="password" ngModel>
+        </mat-form-field><br />
+            <button mat-flat-button color="warn">Submit</button>
+    </form>
+</div> 
