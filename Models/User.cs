@@ -17,13 +17,14 @@ namespace MockCRM.Models
         [Required,MinLength(5)]
         public string ?UserName { get; set; }
 
-        [Required, MinLength(5,ErrorMessage ="Passoword is too short. Please have it be a minimum of 5 chars")]
-        [JsonIgnore]
+        [Required, MinLength(5,ErrorMessage ="Passoword is too short. Please have it be a minimum of 5 chars")] 
         public string ?Password { get; set; }
         public void HashPassword()
         {
             Password = BC.HashPassword(Password);
         }
+      
+
         public bool Authenticate(ApplicationDbContext _context)
         {
             var requested_user = _context.User.Where(user => user.UserName == UserName);

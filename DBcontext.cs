@@ -7,6 +7,7 @@ namespace Pomelo.EntityFrameworkCore.MySql.IntegrationTests
     {
         // database model reference
         public DbSet<User> User { get; set; }
+        public DbSet<Data> Data { get; set; }
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {

@@ -7,6 +7,9 @@ import { AuthenticationService } from './services/authentication.service';
 
 const routes: Routes = [
   {
+    path: "", redirectTo: "/dashboard", pathMatch: "full"
+  },
+  {
     path:"account/register",component:RegisterComponent
   },
   {

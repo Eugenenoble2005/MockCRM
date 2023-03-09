@@ -35,7 +35,6 @@ namespace MockCRM.Filters
                     JsonWebToken jsonWebToken = new JsonWebToken(_context, _configuration);
                     string user_json = jsonWebToken.Verify(auth_token);
                     var user_data = JsonSerializer.Deserialize<User>(user_json);
-                    Console.WriteLine(user_data.UserName);
                     context.ActionArguments["user_id"] = user_data.Id;
                 }
                 catch (Exception)
