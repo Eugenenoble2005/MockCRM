@@ -10,7 +10,7 @@ namespace MockCRM.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(name: "Users", columns: table => new
+            migrationBuilder.CreateTable(name: "users", columns: table => new
             {
                 Id = table.Column<int>(nullable: false, type: "int"),
                 UserName = table.Column<string>(nullable: false),

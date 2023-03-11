@@ -12,7 +12,7 @@ namespace MockCRM.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Data",
+                name: "data",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
